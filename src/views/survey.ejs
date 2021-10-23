@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        let facebookAppId = "<%= facebookAppId %>"
+    </script>
+    <script src="js/survey.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Nhập các số đo </h1>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12 form-group">
+                <input class="form-control" hidden id="psid">
+            </div>
+            <div class="col-12 form-group">
+                <label>Dài áo</label>
+                <input type="number" step="0.5" id="daiAo" class="form-control">
+            </div>
+            <div class="col-12 form-group">
+                <label>Hạ ngực</label>
+                <input type="number" step="0.5" id="haNguc" class="form-control">
+            </div>
+            <div class="col-12 form-group">
+                <label>Vòng cổ</label>
+                <input type="number" step="0.5" id="vongCo" class="form-control">
+            </div>
+            <div class="col-12 form-group">
+                <label>Vòng ngực</label>
+                <input type="number" step="0.5" id="vongNguc" class="form-control">
+            </div>
+            <div class="col-12 form-group">
+                <label>Giang ngực</label>
+                <input type="number" step="0.5" id="giangNguc" class="form-control">
+            </div>
+            <div class="col-12 form-group">
+                <label>Vòng eo</label>
+                <input type="number" step="0.5" id="vongEo" class="form-control">
+            </div>
+            <div class="col-12 form-group">
+                <label>Hạ eo</label>
+                <input type="number" step="0.5" id="haEo" class="form-control">
+            </div>
+            <div class="col-12 form-group">
+                <label>Dài tay</label>
+                <input type="number" step="0.5" id="daiTay" class="form-control">
+            </div>
+            <div class="col-12 form-group">
+                <label>Bắp tay trên </label>
+                <input type="number" step="0.5" id="bapTren" class="form-control">
+            </div>
+            <div class="col-12 form-group">
+                <label>Bắp tay dưới</label>
+                <input type="number" step="0.5" id="bapDuoi" class="form-control">
+            </div>
+            <div class="col-12 form-group">
+                <label>Cửa tay</label>
+                <input type="number" step="0.5" id="cuaTay" class="form-control">
+            </div>
+            <div class="col-12 form-group">
+                <label>Xuôi vai </label>
+                <input type="number" step="0.5" id="xuoiVai" class="form-control">
+            </div>
+            <div class="col-12 form-group">
+                <label>Rộng vai</label>
+                <input type="number" step="0.5" id="rongVai" class="form-control">
+            </div>
+            <div class="col-12 form-group">
+                <label>Chân ngực</label>
+                <input type="number" step="0.5" id="chanNguc" class="form-control">
+            </div>
+            <div class="col-12 form-group">
+                <label>Vòng mông</label>
+                <input type="number" step="0.5" id="vongMong" class="form-control">
+            </div>
+            <div class="col-12 form-group">
+                <label>Vòng ống</label>
+                <input type="number" step="0.5" id="vongOng" class="form-control">
+            </div>
+            <div class="col-12 form-group">
+                <label>Dài quần</label>
+                <input type="number" step="0.5" id="daiQuan" class="form-control">
+            </div>
+            <div class="col-12 form-group">
+                <label>Vòng cạp quần</label>
+                <input type="number" step="0.5" id="capQuan" class="form-control">
+            </div>
+            <div class="col-12 form-group">
+                <label>Tay áo ly hay không ly</label>
+                <select class="custom-select" id="tayAo">
+                    <option value="1">Tay ly</option>
+                    <option value="2">Tay khong ly</option>
+                </select>
+            </div>
+
+            <div class="col-12 form-group">
+                <label>Chất liệu vải</label>
+                <select class="custom-select" id="material">
+                    <option value="1">Co giãn 4 chiều</option>
+                    <option value="2">Không giãn</option>
+                    <option value="3">Dãn ngang</option>
+                    <option value="4">Dãn dọc</option>
+                    <option value="5">Nhung</option>
+                </select>
+            </div>
+            <div class="col-12 form-group">
+                <label>Khách hàng ngực to hay nhỏ</label>
+                <select class="custom-select" id="boob">
+                    <option value="1">To</option>
+                    <option value="2">Nhỏ</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" id="submitBtn">Gửi</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
